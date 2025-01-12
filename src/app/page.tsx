@@ -80,8 +80,8 @@ export default function Home() {
             <Card className='hover:bg-hoverWhite'>
               <a href="https://66e5bd4df79a9a948515cbb2--verdant-squirrel-faca2f.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
-                  <CardTitle>Procure Sense</CardTitle>
-                  <CardDescription>Check Eligibility Criteria of Proposals</CardDescription>
+                  <CardTitle>Exploding Kitten</CardTitle>
+                  <CardDescription>Card flipping game</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Image src={cardGame} alt="project-1" height={150}/>
@@ -91,8 +91,8 @@ export default function Home() {
             <Card className='hover:bg-hoverWhite'>
               <a href="https://66e575bf49004939ba38a25f--rainbow-sunflower-71542f.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
-                  <CardTitle>Procure Sense</CardTitle>
-                  <CardDescription>Check Eligibility Criteria of Proposals</CardDescription>
+                  <CardTitle>A-Know</CardTitle>
+                  <CardDescription>Easy to make quizzes and participation</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Image src={voteApp} alt="project-1" height={150}/>
