@@ -14,7 +14,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -30,12 +29,15 @@ export default function Home() {
           <div className='flex items-center space-x-4 w-full'>
             <div><Image src={profile} width={80} height={80} alt="image" className='rounded-full aspect-square object-cover'/></div>
             <div>
-              <div className='text-xl font-bold'>Hey, I'm Anuj Kumar</div>
+            <div className='text-xl font-bold'>Hey, I&#39;m Anuj Kumar</div>
               <div className='text-sm'>Full Stack Developer</div>
             </div>
           </div>
           <div>
-            <div>I'm a creative software developer with five years of experience. I specialize in UI design and crafting engaging user experiences with great attention to detail.</div>
+            <div>
+              I&#39;m a creative software developer with five years of experience. I specialize
+              in UI design and crafting engaging user experiences with great attention to detail.
+            </div>
           </div>
           <div className='grid grid-cols-5 gap-7'>
             <div className='flex justify-center items-center'><Image src={typescript} alt='TypeScript' width={40} height={40}/></div>
