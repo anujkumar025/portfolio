@@ -27,7 +27,7 @@ export default function Home() {
     <div className= "w-screen flex justify-center items-center">
         <div className="flex flex-col justify-center items-center w-2/5 my-10 space-y-4">
           <div className='flex items-center space-x-4 w-full'>
-            <div><Image src={profile} width={80} height={80} alt="image" className='rounded-full aspect-square object-cover'/></div>
+            <div><Image src={profile} width={80} height={80} alt="image" className='rounded-full aspect-square object-cover hover:animate-slowSpin'/></div>
             <div>
             <div className='text-xl font-bold'>Hey, I&#39;m Anuj Kumar</div>
               <div className='text-sm'>Full Stack Developer</div>
@@ -55,7 +55,7 @@ export default function Home() {
             <div>Projects</div>
           </div>
           <div className='grid grid-cols-2 gap-4'>
-            <Card className='hover:bg-hoverWhite'>
+            <Card className='hover:bg-hoverWhite hover:scale-105 transition-transform duration-300'>
               <a href="https://tender-six.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle>Procure Sense</CardTitle>
@@ -66,7 +66,7 @@ export default function Home() {
                 </CardContent>
               </a>
             </Card>
-            <Card className='hover:bg-hoverWhite'>
+            <Card className='hover:bg-hoverWhite hover:scale-105 transition-transform duration-300'>
               <a href="https://type-sprint-navy.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle>Type Sprint</CardTitle>
@@ -77,7 +77,7 @@ export default function Home() {
                 </CardContent>
               </a>
             </Card>
-            <Card className='hover:bg-hoverWhite'>
+            <Card className='hover:bg-hoverWhite hover:scale-105 transition-transform duration-300'>
               <a href="https://66e5bd4df79a9a948515cbb2--verdant-squirrel-faca2f.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle>Exploding Kitten</CardTitle>
@@ -88,7 +88,7 @@ export default function Home() {
                 </CardContent>
               </a>
             </Card>
-            <Card className='hover:bg-hoverWhite'>
+            <Card className='hover:bg-hoverWhite hover:scale-105 transition-transform duration-300'>
               <a href="https://66e575bf49004939ba38a25f--rainbow-sunflower-71542f.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle>A-Know</CardTitle>
