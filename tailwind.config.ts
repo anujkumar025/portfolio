@@ -11,6 +11,13 @@ export default {
   	extend: {
 		animation: {
 			slowSpin: 'spin 2s linear infinite',
+			float: 'float 1.5s ease-in-out infinite',
+		},
+		keyframes: {
+			float: {
+				'0%, 100%': { transform: 'translateY(0)' },
+				'50%': { transform: 'translateY(-10px)' },
+			},
 		},
   		colors: {
   			background: 'hsl(var(--background))',
