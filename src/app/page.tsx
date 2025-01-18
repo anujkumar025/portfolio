@@ -49,8 +49,7 @@ export default function Home() {
           </div>
           <div>
             <div className='text-base sm:text-sm md:text-base'>
-              I&#39;m a creative software developer with five years of experience. I specialize
-              in UI design and crafting engaging user experiences with great attention to detail.
+              I&#39;m an aspiring full-stack developer with a focus on UI design and creating engaging user experiences. I’m building my skills through personal projects and continuous learning.
             </div>
           </div>
           <div className='grid grid-cols-5 gap-7'>
