@@ -6,7 +6,7 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
-import procure_sense from './assets/procure_sense.png';
+// import procure_sense from './assets/procure_sense.png';
 import typeSprint from './assets/type-sprint.png';
 import cardGame from './assets/card-game.png';
 import voteApp from './assets/voting-app.png';
