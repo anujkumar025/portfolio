@@ -9,63 +9,109 @@ export default {
   ],
   theme: {
   	extend: {
-		rotate: {
-			30: "30deg", // Adds a custom rotate value
-			"-30": "-30deg", // Adds a negative rotate value
-			15: "15deg", // Adds a custom rotate value
-			"-15": "-15deg", // Adds a negative rotate value
-			20: "20deg", // Adds a custom rotate value
-			"-20": "-20deg", // Adds a negative rotate value
-		},
-		animation: {
-			slowSpin: 'spin 2s linear infinite',
-			float: 'float 1.5s ease-in-out infinite',
-			legBack: "leg-back 2s linear infinite",
-			legFront: "leg-front 2s linear infinite",
-			bodyMotion: "body-motion 1s linear infinite",
-			gooseWalk: "gooseWalk 15s linear infinite",
-		},
-		keyframes: {
-			gooseWalk: {
-				"0%": { transform: "translateX(0) scaleX(1)" }, // Start, facing right
-				"50%": { transform: "translateX(200px) scaleX(1)" }, // Move forward
-				"50.1%": { transform: "translateX(200px) scaleX(-1)" }, // Flip
-				"100%": { transform: "translateX(0) scaleX(-1)" }, // Return to start
-			},
-			float: {
-				'0%, 100%': { transform: 'translateY(0)' },
-				'50%': { transform: 'translateY(-10px)' },
-			},
-			"body-motion": {
-				"0%": { transform: 'rotate(0deg) translateY(0px)' },
-				"50%": { transform: 'rotate(5deg) translateY(3px)' },
-				"100%": { transform: 'rotate(0deg) translateY(0px)' },
-			},
-			"leg-back": {
-				"0%": { transform: "rotate(20deg) translateY(2px)" }, // Start (backward)
-				"25%": { transform: "rotate(0deg) translateY(-2px)" }, // Move slightly up
-				"50%": { transform: "rotate(-20deg) translateY(0px)" }, // Fully forward and down
-				"62.5%": { transform: "rotate(-10deg) translateY(2px)" }, 
-				"75%": { transform: "rotate(0deg) translateY(2px)" }, 
-				"100%": { transform: "rotate(20deg) translateY(2px)" }, 
-			},
-			"leg-front": {
-				"0%": { transform: "rotate(-20deg) translateY(0px)" }, // Start (forward)
-				"12.5%": {transform: "rotate(-10deg) translateY(2px)" },
-				"25%": { transform: "rotate(0deg) translateY(2px)" }, // Move slightly down
-				"50%": { transform: "rotate(20deg) translateY(2px)" }, // Fully backward and down
-				"75%": { transform: "rotate(0deg) translateY(-2px)" }, // Move slightly down
-				"100%": { transform: "rotate(-20deg) translateY(0px)" }, // Fully backward and down
-			},
-		},
-		animationDelay: {
-			"200ms": "200ms",
-			"40ms": "40ms",
-		},
+  		rotate: {
+  			'15': '15deg',
+  			'20': '20deg',
+  			'30': '30deg',
+  			'-30': '-30deg',
+  			'-15': '-15deg',
+  			'-20': '-20deg'
+  		},
+  		animation: {
+  			slowSpin: 'spin 2s linear infinite',
+  			float: 'float 1.5s ease-in-out infinite',
+  			legBack: 'leg-back 2s linear infinite',
+  			legFront: 'leg-front 2s linear infinite',
+  			bodyMotion: 'body-motion 1s linear infinite',
+  			gooseWalk: 'gooseWalk 15s linear infinite'
+  		},
+  		keyframes: {
+  			gooseWalk: {
+  				'0%': {
+  					transform: 'translateX(0) scaleX(1)'
+  				},
+  				'50%': {
+  					transform: 'translateX(200px) scaleX(1)'
+  				},
+  				'50.1%': {
+  					transform: 'translateX(200px) scaleX(-1)'
+  				},
+  				'100%': {
+  					transform: 'translateX(0) scaleX(-1)'
+  				}
+  			},
+  			float: {
+  				'0%, 100%': {
+  					transform: 'translateY(0)'
+  				},
+  				'50%': {
+  					transform: 'translateY(-10px)'
+  				}
+  			},
+  			'body-motion': {
+  				'0%': {
+  					transform: 'rotate(0deg) translateY(0px)'
+  				},
+  				'50%': {
+  					transform: 'rotate(5deg) translateY(3px)'
+  				},
+  				'100%': {
+  					transform: 'rotate(0deg) translateY(0px)'
+  				}
+  			},
+  			'leg-back': {
+  				'0%': {
+  					transform: 'rotate(20deg) translateY(2px)'
+  				},
+  				'25%': {
+  					transform: 'rotate(0deg) translateY(-2px)'
+  				},
+  				'50%': {
+  					transform: 'rotate(-20deg) translateY(0px)'
+  				},
+  				'62.5%': {
+  					transform: 'rotate(-10deg) translateY(2px)'
+  				},
+  				'75%': {
+  					transform: 'rotate(0deg) translateY(2px)'
+  				},
+  				'100%': {
+  					transform: 'rotate(20deg) translateY(2px)'
+  				}
+  			},
+  			'leg-front': {
+  				'0%': {
+  					transform: 'rotate(-20deg) translateY(0px)'
+  				},
+  				'12.5%': {
+  					transform: 'rotate(-10deg) translateY(2px)'
+  				},
+  				'25%': {
+  					transform: 'rotate(0deg) translateY(2px)'
+  				},
+  				'50%': {
+  					transform: 'rotate(20deg) translateY(2px)'
+  				},
+  				'75%': {
+  					transform: 'rotate(0deg) translateY(-2px)'
+  				},
+  				'100%': {
+  					transform: 'rotate(-20deg) translateY(0px)'
+  				}
+  			}
+  		},
+  		animationDelay: {
+  			'200ms': '200ms',
+  			'40ms': '40ms'
+  		},
   		colors: {
+  			icon: {
+  				dark: 'var(--icon-light)',
+  				light: 'var(--icon-dark)'
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
-			hoverWhite: 'hsl(var(--hover-white))',
+  			hoverWhite: 'hsl(var(--hover-white))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
