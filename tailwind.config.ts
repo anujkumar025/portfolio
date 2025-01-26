@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
   	extend: {
+		fill: {
+			'light': 'hsl(var(--icon-light))',
+			'dark': 'hsl(var(--icon-dark))',
+		},
   		rotate: {
   			'15': '15deg',
   			'20': '20deg',
@@ -104,11 +108,7 @@ export default {
   			'200ms': '200ms',
   			'40ms': '40ms'
   		},
-  		colors: {
-  			icon: {
-  				dark: 'var(--icon-light)',
-  				light: 'var(--icon-dark)'
-  			},
+  		colors: { 
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			hoverWhite: 'hsl(var(--hover-white))',

@@ -19,7 +19,7 @@ export default function Project() {
             <div>Projects</div>
           </div>
           <div className='grid grid-cols-2 gap-4'>
-            {/* <Card className='hover:bg-hoverWhite hover:scale-105 transition-transform duration-300'>
+            {/* <Card className='hover:scale-105 transition-transform duration-300'>
               <a href="https://tender-six.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle className="text-base sm:text-sm">Procure Sense</CardTitle>
@@ -30,7 +30,7 @@ export default function Project() {
                 </CardContent>
               </a>
             </Card> */}
-            <Card className='hover:bg-hoverWhite hover:scale-105 transition-transform duration-300'>
+            <Card className='hover:scale-105 transition-transform duration-300'>
               <a href="https://type-sprint-navy.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle className="text-base sm:text-sm">Type Sprint</CardTitle>
@@ -41,7 +41,7 @@ export default function Project() {
                 </CardContent>
               </a>
             </Card>
-            <Card className='hover:bg-hoverWhite hover:scale-105 transition-transform duration-300'>
+            <Card className='hover:scale-105 transition-transform duration-300'>
               <a href="https://66e5bd4df79a9a948515cbb2--verdant-squirrel-faca2f.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle className="text-base sm:text-sm">Exploding Kitten</CardTitle>
@@ -52,7 +52,7 @@ export default function Project() {
                 </CardContent>
               </a>
             </Card>
-            <Card className='hover:bg-hoverWhite hover:scale-105 transition-transform duration-300'>
+            <Card className='hover:scale-105 transition-transform duration-300'>
               <a href="https://66e575bf49004939ba38a25f--rainbow-sunflower-71542f.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle className="text-base sm:text-sm">A-Know</CardTitle>
