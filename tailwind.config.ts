@@ -9,10 +9,6 @@ export default {
   ],
   theme: {
   	extend: {
-		fill: {
-			'light': 'hsl(var(--icon-light))',
-			'dark': 'hsl(var(--icon-dark))',
-		},
   		rotate: {
   			'15': '15deg',
   			'20': '20deg',
@@ -23,7 +19,6 @@ export default {
   		},
   		animation: {
   			slowSpin: 'spin 2s linear infinite',
-  			float: 'float 1.5s ease-in-out infinite',
   			legBack: 'leg-back 2s linear infinite',
   			legFront: 'leg-front 2s linear infinite',
   			bodyMotion: 'body-motion 1s linear infinite',
@@ -42,14 +37,6 @@ export default {
   				},
   				'100%': {
   					transform: 'translateX(0) scaleX(-1)'
-  				}
-  			},
-  			float: {
-  				'0%, 100%': {
-  					transform: 'translateY(0)'
-  				},
-  				'50%': {
-  					transform: 'translateY(-10px)'
   				}
   			},
   			'body-motion': {
@@ -109,6 +96,8 @@ export default {
   			'40ms': '40ms'
   		},
   		colors: { 
+			light: 'hsl(var(--icon-light))',
+			dark: 'hsl(var(--icon-dark))',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			hoverWhite: 'hsl(var(--hover-white))',
