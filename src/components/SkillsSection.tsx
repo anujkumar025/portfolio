@@ -65,7 +65,7 @@ export default function SkillsSection() {
                     <IconPostgresql />
                 </div>
                 <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    Postgresql
+                    PostgreSQL
                 </span>
             </div>
             <div className="relative flex flex-col items-center group hover:text-[#07b6d5]">
@@ -92,18 +92,6 @@ export default function SkillsSection() {
                     Prisma
                 </span>
             </div>
-
-
-            {/* <div className='flex justify-center items-center hover:animate-float'><IconTypescript/></div>
-            <div className='flex justify-center items-center hover:animate-float'><IconCSS/></div>
-            <div className='flex justify-center items-center hover:animate-float'><IconReact/></div>
-            <div className='flex justify-center items-center hover:animate-float'><IconExpress/></div>
-            <div className='flex justify-center items-center hover:animate-float'><IconMongodb/></div>
-            <div className='flex justify-center items-center hover:animate-float'><IconNextjs/></div>
-            <div className='flex justify-center items-center hover:animate-float'><IconPostgresql/></div>
-            <div className='flex justify-center items-center hover:animate-float'><IconTailwind/></div>
-            <div className='flex justify-center items-center hover:animate-float'><IconNestjs/></div>
-            <div className='flex justify-center items-center hover:animate-float'><IconPrisma/></div> */}
         </div>
     )
 }

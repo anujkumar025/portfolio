@@ -21,7 +21,6 @@ export default function Bio(){
           <div className='flex items-center w-full justify-between'>
             <div className="flex items-center space-x-4">
               <div className="group">
-                {/* <div className="w-20 h-20 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 bg-gradient-to-r from-violet-400 to-pink-400"> */}
                 <div className="w-20 h-20 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 bg-gradient-to-r from-blue-200 to-cyan-200">
                   <Image src={profile} width={80} height={80} alt="image" className='rounded-full aspect-square object-cover absolute hover:scale-90'/>
                 </div>
