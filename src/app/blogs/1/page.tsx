@@ -25,20 +25,20 @@ export default function BlogPage() {
         <div className="flex flex-col justify-center items-center w-full sm:w-4/5 md:w-3/5 lg:w-2/5 my-10 mx-4 sm:mx-0 space-y-2">
             
             <div className="fixed bottom-20 left-10 cursor-pointer">
-                <Goose bodyMotion={bodyMotion} setBodyMotion={setBodyMotion} />
+                <Goose bodyMotion={bodyMotion} />
             </div>
             <div className="flex w-full flex-col">
                 <div className="flex items-center justify-between">
                     <div>
                         <div className="flex items-center space-x-4">
                             
-                            <a href="/">
+                            <Link href="/">
                                 <div className="group">
                                     <div className="w-20 h-20 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 bg-gradient-to-r from-blue-200 to-cyan-200">
                                     <Image src={profile} width={80} height={80} alt="image" className='rounded-full aspect-square object-cover absolute hover:scale-90'/>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                             <div className='flex'>
                                 <div className="flex">
                                 <div className='flex justify-center items-center'>
@@ -78,7 +78,7 @@ export default function BlogPage() {
                     <br />
                     <p>Hello there!</p>
                     <p>
-                        You might be wondering, “Why a goose?” Honestly, I don’t have a solid
+                        You might be wondering, &#34;Why a goose?&#34; Honestly, I don’t have a solid
                         answer. Initially, I just needed a placeholder image and thought I’d
                         replace it later. But somehow, the goose stuck, and I started imagining
                         all sorts of fun ideas involving it. One of those ideas turned into
@@ -88,7 +88,7 @@ export default function BlogPage() {
                     <strong>The Idea Behind the Walking Goose</strong>
                     <p>
                         What started as a simple placeholder quickly became a mini passion
-                        project. Watching the goose "walk" was surprisingly delightful, and I
+                        project. Watching the goose &#34;walk&#34; was surprisingly delightful, and I
                         wanted to make the motion feel as natural as possible. The animation
                         combines subtle movements of both the legs and the body to create a
                         lifelike walking effect.

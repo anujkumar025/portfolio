@@ -4,10 +4,9 @@ import Image from 'next/image';
 
 type GooseProps = {
     bodyMotion: boolean;
-    setBodyMotion: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export default function Goose({ bodyMotion, setBodyMotion }: GooseProps){
+export default function Goose({ bodyMotion }: GooseProps){
 
     return (
         <div className='relative w-full h-[100px]'>
