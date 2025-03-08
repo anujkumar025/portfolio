@@ -5,7 +5,7 @@ export default function BlogSection(){
     return (
         <>
         <div className="flex justify-start w-full text-lg sm:text-base">
-            <div>Blogs</div>
+            <div className="font-semibold">Blogs</div>
         </div>
         <div className="w-full">
             <Link href="blogs/1" className="inline-block">

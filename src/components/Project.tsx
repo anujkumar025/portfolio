@@ -17,7 +17,7 @@ export default function Project() {
     return (
         <>
         <div className='flex justify-start w-full text-lg sm:text-base'>
-            <div>Projects</div>
+            <div className='font-semibold'>Projects</div>
           </div>
           <div className='grid grid-cols-2 gap-4'>
             <Card className='hover:scale-105 transition-transform duration-300'>

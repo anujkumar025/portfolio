@@ -1,6 +1,6 @@
 export default function IconNestjs() {
     return (
-      <div className="flex items-center justify-center text-icon-light dark:text-icon-dark transition-colors duration-25">
+      <div className="flex items-center justify-center">
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
