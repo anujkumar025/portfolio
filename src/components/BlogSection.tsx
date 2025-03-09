@@ -7,9 +7,9 @@ export default function BlogSection(){
         <div className="flex justify-start w-full text-lg sm:text-base">
             <div className="font-semibold">Blogs</div>
         </div>
-        <div className="w-full">
+        <div className="w-full pb-10">
             <Link href="blogs/1" className="inline-block">
-                <div className="p-5 hover:bg-[#fef3e0] dark:hover:bg-[#1a1a1a] rounded-xl w-fit">
+                <div className="p-5 hover:bg-[#FFFFFF73] dark:hover:bg-[#FFFFFF73] rounded-xl w-fit">
                     <div className="text-lg sm:text-base">
                         Bringing the Goose to Life 
                     </div>

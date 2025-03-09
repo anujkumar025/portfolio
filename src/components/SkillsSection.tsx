@@ -8,10 +8,19 @@ import IconPrisma from './svgs/IconPrisma';
 import IconReact from './svgs/IconReact';
 import IconTailwind from './svgs/IconTailwind';
 import IconNestjs from './svgs/IconNestjs';
+// import IconCPP from './svgs/IconCPP';
 
 export default function SkillsSection() {
     return (
         <div className='grid grid-cols-5 gap-7'>
+            {/* <div className="relative flex flex-col items-center group hover:text-[#0086d4]">
+                <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
+                    <IconCPP />
+                </div>
+                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    CPP
+                </span>
+            </div> */}
             <div className="relative flex flex-col items-center group hover:text-[#3079c6]">
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
                     <IconTypescript />

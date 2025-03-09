@@ -1,8 +1,8 @@
 "use client"
  
 import * as React from "react"
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
+// import { Moon, Sun } from "lucide-react"
+// import { useTheme } from "next-themes"
 import Image from 'next/image';
 import profile from '../../public/profile.jpeg';
 import IconGithub from "./svgs/IconGithub"
@@ -10,11 +10,11 @@ import IconLinkedIn from "./svgs/IconLinkedIn"
 import IconLocation from "./svgs/IconLocation";
 
 export default function Bio(){
-  const { theme, setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme();
 
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
+  // const toggleTheme = () => {
+  //   setTheme(theme === "dark" ? "light" : "dark");
+  // };
 
     return (
         <>
@@ -49,7 +49,7 @@ export default function Bio(){
                 </div>
               </div>
             </div>
-            <div>
+            {/* <div>
               <button
                 onClick={toggleTheme}
                 className="relative flex items-center justify-center p-2 w-10 h-10 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all"
@@ -66,7 +66,7 @@ export default function Bio(){
                   }`}
                 />
               </button>
-            </div>
+            </div> */}
           </div>
           <div>
             <div className='text-base sm:text-sm md:text-base'>

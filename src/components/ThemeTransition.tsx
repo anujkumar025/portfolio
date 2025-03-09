@@ -12,8 +12,6 @@ const COLOR_STOPS: ColorStop[] = [
 
     { bg: [39, 80, 90], fg: [5, 5, 15] },  // Dawn (soft orange)
   
-    // { bg: [50, 90, 90], fg: [5, 5, 15] },  // Early morning (golden yellow)
-    
     { bg: [180, 50, 85], fg: [0, 0, 10] },  // Noon (clear sky blue)
     
     { bg: [250, 35, 70], fg: [5, 5, 15] },  // Late afternoon (blueish-lavender)
@@ -21,10 +19,6 @@ const COLOR_STOPS: ColorStop[] = [
     { bg: [250, 35, 70], fg: [5, 5, 15] },  // Late afternoon (blueish-lavender)
     
     { bg: [180, 50, 85], fg: [0, 0, 10] },  // Noon (clear sky blue)
-    
-    // { bg: [180, 60, 90], fg: [5, 5, 15] },  // Noon (clear sky blue)
-    
-    // { bg: [50, 90, 90], fg: [5, 5, 15] },  // Early morning (golden yellow)
   
     { bg: [39, 80, 90], fg: [5, 5, 15] },  // Back to Dawn
 ];
@@ -42,7 +36,7 @@ export const ThemeTransition = ({
   useEffect(() => {
     let animationFrameId: number;
     const startTime = Date.now();
-    const duration = 120000; // 24-second cycle for demonstration
+    const duration = 20000; // 24-second cycle for demonstration
 
     const updateProgress = () => {
       const elapsed = Date.now() - startTime;

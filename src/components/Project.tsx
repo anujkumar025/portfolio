@@ -6,7 +6,6 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
-// import procure_sense from './assets/procure_sense.png';
 import typeSprint from './assets/type-sprint.png';
 import cardGame from './assets/card-game.png';
 import voteApp from './assets/voting-app.png';
@@ -20,7 +19,7 @@ export default function Project() {
             <div className='font-semibold'>Projects</div>
           </div>
           <div className='grid grid-cols-2 gap-4'>
-            <Card className='hover:scale-105 transition-transform duration-300'>
+            <Card className='hover:scale-105 transition-transform duration-300 bg-[#FFFFFFCC]'>
               <a href="https://github.com/anujkumar025/voice-control-to-do" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle className="text-base sm:text-sm">Voice Controlled To-Do</CardTitle>
@@ -31,7 +30,7 @@ export default function Project() {
                 </CardContent>
               </a>
             </Card>
-            <Card className='hover:scale-105 transition-transform duration-300'>
+            <Card className='hover:scale-105 transition-transform duration-300 bg-[#FFFFFFCC]'>
               <a href="https://66e575bf49004939ba38a25f--rainbow-sunflower-71542f.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle className="text-base sm:text-sm">A-Know</CardTitle>
@@ -42,7 +41,7 @@ export default function Project() {
                 </CardContent>
               </a>
             </Card>
-            <Card className='hover:scale-105 transition-transform duration-300'>
+            <Card className='hover:scale-105 transition-transform duration-300 bg-[#FFFFFFCC]'>
               <a href="https://66e5bd4df79a9a948515cbb2--verdant-squirrel-faca2f.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle className="text-base sm:text-sm">Exploding Kitten</CardTitle>
@@ -53,7 +52,7 @@ export default function Project() {
                 </CardContent>
               </a>
             </Card>
-            <Card className='hover:scale-105 transition-transform duration-300'>
+            <Card className='hover:scale-105 transition-transform duration-300 bg-[#FFFFFFCC]'>
               <a href="https://type-sprint-navy.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle className="text-base sm:text-sm">Type Sprint</CardTitle>
