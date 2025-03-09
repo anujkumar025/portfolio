@@ -10,7 +10,7 @@ export default {
   theme: {
   	extend: {
 		transitionDuration: {
-			"cycle-slow": "20000ms",
+			"cycle-slow": "120000ms",
 		},
   		rotate: {
   			'15': '15deg',

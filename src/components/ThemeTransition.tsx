@@ -36,7 +36,7 @@ export const ThemeTransition = ({
   useEffect(() => {
     let animationFrameId: number;
     const startTime = Date.now();
-    const duration = 20000; // 24-second cycle for demonstration
+    const duration = 120000; // 24-second cycle for demonstration
 
     const updateProgress = () => {
       const elapsed = Date.now() - startTime;
