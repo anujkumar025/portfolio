@@ -5,6 +5,7 @@ import BlogSection from '@/components/BlogSection';
 import Goose from '@/components/Goose';
 import Project from '@/components/Project';
 import SkillsSection from '@/components/SkillsSection';
+import WorkExp from '@/components/WorkExp';
 import { useState } from 'react';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
           </div>
           <Bio/>
           <SkillsSection/>
+          <WorkExp/>
           <Project/>
           <BlogSection/>
         </div>

@@ -16,7 +16,7 @@ import RestroGram from './assets/RestroGram.png';
 export default function Project() {
     return (
         <>
-        <div className='flex justify-start w-full text-lg sm:text-base'>
+          <div className='flex justify-start w-full text-lg sm:text-base'>
             <div className='font-semibold'>Projects</div>
           </div>
           <div className='grid grid-cols-2 gap-4'>
