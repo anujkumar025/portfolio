@@ -8,22 +8,21 @@ interface ColorStop {
 }
 
 const COLOR_STOPS: ColorStop[] = [
-    { bg: [39, 80, 90], fg: [5, 5, 15] },  // Dawn (soft orange)
+  { bg: [39, 80, 90], fg: [5, 5, 15] }, // Dawn (soft orange)
 
-    { bg: [39, 80, 90], fg: [5, 5, 15] },  // Dawn (soft orange)
-  
-    { bg: [180, 50, 85], fg: [0, 0, 10] },  // Noon (clear sky blue)
-    
-    { bg: [250, 35, 70], fg: [5, 5, 15] },  // Late afternoon (blueish-lavender)
-    
-    { bg: [250, 35, 70], fg: [5, 5, 15] },  // Late afternoon (blueish-lavender)
-    
-    { bg: [180, 50, 85], fg: [0, 0, 10] },  // Noon (clear sky blue)
-  
-    { bg: [39, 80, 90], fg: [5, 5, 15] },  // Back to Dawn
+  { bg: [39, 80, 90], fg: [5, 5, 15] }, // Dawn (soft orange)
+
+  { bg: [180, 50, 85], fg: [0, 0, 10] }, // Noon (clear sky blue)
+
+  { bg: [250, 35, 70], fg: [5, 5, 15] }, // Late afternoon (blueish-lavender)
+
+  { bg: [250, 35, 70], fg: [5, 5, 15] }, // Late afternoon (blueish-lavender)
+
+  { bg: [180, 50, 85], fg: [0, 0, 10] }, // Noon (clear sky blue)
+
+  { bg: [39, 80, 90], fg: [5, 5, 15] }, // Back to Dawn
 ];
-  
-  
+
 const lerp = (a: number, b: number, t: number): number => a + (b - a) * t;
 
 export const ThemeTransition = ({

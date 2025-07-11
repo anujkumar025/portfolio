@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 // import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeTransition } from "@/components/ThemeTransition";
+import ClickSpark from "@/components/ui/clickSpark";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,16 +32,22 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <ThemeProvider 
-            attribute="class"
-            defaultTheme="light" 
-            enableSystem
-            disableTransitionOnChange
-        > */}
-          <ThemeTransition>
-            {children}
-          </ThemeTransition>
-        {/* </ThemeProvider> */}
+        <ClickSpark
+          sparkColor="#fff"
+          sparkSize={10}
+          sparkRadius={15}
+          sparkCount={8}
+          duration={400}
+        >
+          {/* <ThemeProvider 
+              attribute="class"
+              defaultTheme="light" 
+              enableSystem
+              disableTransitionOnChange
+          > */}
+          <ThemeTransition>{children}</ThemeTransition>
+          {/* </ThemeProvider> */}
+        </ClickSpark>
       </body>
     </html>
   );

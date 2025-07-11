@@ -8,7 +8,7 @@ import {
   } from "@/components/ui/card"
 import typeSprint from './assets/type-sprint.png';
 import cardGame from './assets/card-game.png';
-import voteApp from './assets/voting-app.png';
+// import voteApp from './assets/voting-app.png';
 import ToDo from './assets/To-Do.png'
 import RestroGram from './assets/RestroGram.png';
 
@@ -42,7 +42,7 @@ export default function Project() {
                 </CardContent>
               </a>
             </Card>
-            <Card className='hover:scale-105 transition-transform duration-300 bg-[#FFFFFFCC]'>
+            {/* <Card className='hover:scale-105 transition-transform duration-300 bg-[#FFFFFFCC]'>
               <a href="https://66e575bf49004939ba38a25f--rainbow-sunflower-71542f.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle className="text-base sm:text-sm">A-Know</CardTitle>
@@ -52,7 +52,7 @@ export default function Project() {
                   <Image className='rounded-sm' src={voteApp} alt="Quiz App" height={150}/>
                 </CardContent>
               </a>
-            </Card>
+            </Card> */}
             <Card className='hover:scale-105 transition-transform duration-300 bg-[#FFFFFFCC]'>
               <a href="https://66e5bd4df79a9a948515cbb2--verdant-squirrel-faca2f.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
