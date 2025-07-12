@@ -1,24 +1,17 @@
 "use client";
 
 import { useState } from "react"
-import { Moon, Sun } from "lucide-react"
 import Link from 'next/link';
-import { useTheme } from "next-themes"
-import Goose from "@/components/Goose";
 import { Button } from "@/components/ui/button";
 import Image from 'next/image';
 import profile from './../../../../public/profile.jpeg'
 import IconLinkedIn from "@/components/svgs/IconLinkedIn";
 import IconGithub from "@/components/svgs/IconGithub";
+import Goose from "../components/GooseBlog";
 
 
 export default function BlogPage() {
-    const { theme, setTheme } = useTheme();
     const [bodyMotion, setBodyMotion] = useState(true);
-
-    const toggleTheme = () => {
-        setTheme(theme === "dark" ? "light" : "dark");
-    };
 
   return (
     <div className= "w-screen flex justify-center items-center bg-background">
@@ -55,26 +48,10 @@ export default function BlogPage() {
                             </div>
                         </div>
                     </div>
-                    <button
-                        onClick={toggleTheme}
-                        className="relative flex items-center justify-center p-2 w-10 h-10 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all"
-                        aria-label="Toggle theme"
-                    >
-                        <Sun
-                        className={`absolute h-5 w-5 transition-transform ${
-                            theme === "dark" ? "rotate-90 scale-0" : "rotate-0 scale-100"
-                        }`}
-                        />
-                        <Moon
-                        className={`absolute h-5 w-5 transition-transform ${
-                            theme === "dark" ? "rotate-0 scale-100" : "-rotate-90 scale-0"
-                        }`}
-                        />
-                    </button>
                 </div>
-                <div className="prose lg:prose-xl mx-auto text-gray-800 dark:text-gray-200 p-5">
+                <div className="prose lg:prose-xl mx-auto text-gray-100 dark:text-gray-200 p-5">
                     <div className="text-lg font-semibold">Bringing the Goose to Life: A Fun Animation Experiment</div>
-                    <div className="text-base sm:text-sm text-gray-600 dark:text-gray-200">27th Jan 2025</div>
+                    <div className="text-base sm:text-sm text-gray-200 dark:text-gray-200">27th Jan 2025</div>
                     <br />
                     <p>Hello there!</p>
                     <p>

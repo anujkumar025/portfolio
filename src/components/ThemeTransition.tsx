@@ -7,21 +7,44 @@ interface ColorStop {
   fg: [number, number, number];
 }
 
+// const COLOR_STOPS: ColorStop[] = [
+//   { bg: [39, 80, 90], fg: [5, 5, 15] }, // Dawn (soft orange)
+
+//   { bg: [39, 80, 90], fg: [5, 5, 15] }, // Dawn (soft orange)
+
+//   { bg: [180, 50, 85], fg: [0, 0, 10] }, // Noon (clear sky blue)
+
+//   { bg: [250, 35, 70], fg: [5, 5, 15] }, // Late afternoon (blueish-lavender)
+
+//   { bg: [250, 35, 70], fg: [5, 5, 15] }, // Late afternoon (blueish-lavender)
+
+//   { bg: [180, 50, 85], fg: [0, 0, 10] }, // Noon (clear sky blue)
+
+//   { bg: [39, 80, 90], fg: [5, 5, 15] }, // Back to Dawn
+// ];
 const COLOR_STOPS: ColorStop[] = [
-  { bg: [39, 80, 90], fg: [5, 5, 15] }, // Dawn (soft orange)
+  { bg: [214, 58, 16], fg: [0, 0, 100] }, // Back to Dawn
+  
+  { bg: [218, 45, 61], fg: [0, 0, 100] },  // Dawn (soft orange)
+  
+  { bg: [217, 57, 7], fg: [0, 0, 100] },  // Dawn (soft orange)
+  
+  { bg: [220, 47, 26], fg: [0, 0, 100] }, // Noon (clear sky blue)
+  
+  { bg: [235, 27, 39], fg: [0, 0, 100] }, // Back to Dawn
 
-  { bg: [39, 80, 90], fg: [5, 5, 15] }, // Dawn (soft orange)
+  { bg: [214, 58, 16], fg: [0, 0, 100] }, // Back to Dawn
+  ];
 
-  { bg: [180, 50, 85], fg: [0, 0, 10] }, // Noon (clear sky blue)
+  
 
-  { bg: [250, 35, 70], fg: [5, 5, 15] }, // Late afternoon (blueish-lavender)
-
-  { bg: [250, 35, 70], fg: [5, 5, 15] }, // Late afternoon (blueish-lavender)
-
-  { bg: [180, 50, 85], fg: [0, 0, 10] }, // Noon (clear sky blue)
-
-  { bg: [39, 80, 90], fg: [5, 5, 15] }, // Back to Dawn
-];
+// hsl(218, 45%, 61%)
+// hsl(217, 57%, 7%)
+// hsl(280, 26%, 54%)
+// hsl(220, 47%, 26%)
+// hsl(214, 58%, 16%)
+// hsl(235, 27%, 39%)
+  
 
 const lerp = (a: number, b: number, t: number): number => a + (b - a) * t;
 
@@ -35,7 +58,7 @@ export const ThemeTransition = ({
   useEffect(() => {
     let animationFrameId: number;
     const startTime = Date.now();
-    const duration = 120000; // 24-second cycle for demonstration
+    const duration = 160000; // 24-second cycle for demonstration
 
     const updateProgress = () => {
       const elapsed = Date.now() - startTime;

@@ -13,19 +13,11 @@ import IconNestjs from './svgs/IconNestjs';
 export default function SkillsSection() {
     return (
         <div className='grid grid-cols-5 gap-7'>
-            {/* <div className="relative flex flex-col items-center group hover:text-[#0086d4]">
-                <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
-                    <IconCPP />
-                </div>
-                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    CPP
-                </span>
-            </div> */}
             <div className="relative flex flex-col items-center group hover:text-[#3079c6]">
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
                     <IconTypescript />
                 </div>
-                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-200 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     Typescript
                 </span>
             </div>
@@ -33,7 +25,7 @@ export default function SkillsSection() {
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
                     <IconCSS />
                 </div>
-                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-200 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     CSS
                 </span>
             </div>
@@ -41,7 +33,7 @@ export default function SkillsSection() {
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
                     <IconReact />
                 </div>
-                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-200 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     ReactJs
                 </span>
             </div>
@@ -49,7 +41,7 @@ export default function SkillsSection() {
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
                     <IconExpress />
                 </div>
-                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-200 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     Express
                 </span>
             </div>
@@ -57,7 +49,7 @@ export default function SkillsSection() {
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
                     <IconMongodb />
                 </div>
-                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-200 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     MongoDB
                 </span>
             </div>
@@ -65,7 +57,7 @@ export default function SkillsSection() {
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
                     <IconNextjs />
                 </div>
-                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-200 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     NextJs
                 </span>
             </div>
@@ -73,7 +65,7 @@ export default function SkillsSection() {
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
                     <IconPostgresql />
                 </div>
-                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-200 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     PostgreSQL
                 </span>
             </div>
@@ -81,7 +73,7 @@ export default function SkillsSection() {
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
                     <IconTailwind />
                 </div>
-                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-200 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     Tailwind
                 </span>
             </div>
@@ -89,7 +81,7 @@ export default function SkillsSection() {
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
                     <IconNestjs />
                 </div>
-                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-200 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     NestJs
                 </span>
             </div>
@@ -97,7 +89,7 @@ export default function SkillsSection() {
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
                     <IconPrisma />
                 </div>
-                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="absolute top-[calc(100%-4px)] text-sm text-gray-200 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     Prisma
                 </span>
             </div>

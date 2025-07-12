@@ -13,7 +13,7 @@ export default function BlogSection(){
                     <div className="text-lg sm:text-base">
                         Bringing the Goose to Life 
                     </div>
-                    <div className="text-base sm:text-sm text-gray-600 dark:text-gray-200">27th Jan 2025</div>
+                    <div className="text-base sm:text-sm text-gray-200 dark:text-white">27th Jan 2025</div>
                 </div>
             </Link>
         </div>
