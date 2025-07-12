@@ -4,10 +4,7 @@ import { useEffect, useState } from "react";
 import GooseBody from "./assets/goose body.png";
 import GooseLeg from "./assets/goose leg.png";
 import Image from "next/image";
-
-type GooseProps = {
-  bodyMotion: boolean;
-};
+import Lightning from "./ui/lightning";
 
 const MESSAGE_MAP: Record<number, string[]> = {
   1: ["Honk! I'm taking a break."],
@@ -33,48 +30,57 @@ function getRandomMessage(messages: string[]) {
   return messages[Math.floor(Math.random() * messages.length)];
 }
 
-export default function Goose({ bodyMotion }: GooseProps) {
+export default function Goose({ clickCount }: { clickCount: number }) {
   const [stopAnimation, setStopAnimation] = useState(false);
-  const [clickCount, setClickCount] = useState(0);
   const [dialogMessage, setDialogMessage] = useState("");
+  const [showLightning, setShowLighting] = useState(false);
+  const [bodyMotion] = useState(true);
 
   useEffect(() => {
+    const messages = MESSAGE_MAP[clickCount];
     console.log(clickCount);
-    const toggleMotion = () => {
-      setClickCount((prev) => {
-        const newCount = prev + 1;
-        const messages = MESSAGE_MAP[newCount];
-
-        if (messages) {
-          const randomMsg = getRandomMessage(messages);
-          setDialogMessage(randomMsg);
-          setStopAnimation(true); // Only stop if message exists
-        } else {
-          setDialogMessage(""); // Clear message
-          setStopAnimation(false); // Resume animation if no message
-        }
-
-        return newCount;
-      });
-    };
-
-    document.addEventListener("click", toggleMotion);
-    return () => {
-      document.removeEventListener("click", toggleMotion);
-    };
-  }, []);
+    if (messages) {
+      setDialogMessage(getRandomMessage(messages));
+      setStopAnimation(true);
+    } else if (clickCount > 22 && clickCount < 26) {
+      setDialogMessage("");
+      setShowLighting(true);
+      setStopAnimation(true);
+    } else if (clickCount > 25) {
+      setDialogMessage("");
+      setShowLighting(false);
+      setStopAnimation(false);
+    } else {
+      setDialogMessage("");
+      setStopAnimation(false);
+      setShowLighting(false);
+    }
+  }, [clickCount]);
 
   return (
     <div className="relative w-full h-[150px] flex justify-center items-end">
+      {/* Blackout Overlay */}
+      {clickCount >= 23 && clickCount <= 25 && (
+        <div className="fixed inset-0 bg-black z-40 pointer-events-none" />
+      )}
+
+      {/* Dialog Message */}
       {stopAnimation && dialogMessage && (
-        <div className="absolute bottom-[120px] left-[50%] -translate-x-1/2 px-4 py-2 w-[220px] bg-white border border-gray-300 rounded-md shadow text-sm text-gray-800 animate-fadeIn text-center">
+        <div className="absolute bottom-[120px] left-[50%] -translate-x-1/2 px-4 py-2 w-[220px] bg-white border border-gray-300 rounded-md shadow text-sm text-gray-800 animate-fadeIn text-center z-50">
           {dialogMessage}
         </div>
       )}
+
+      {/* Goose */}
       <div
-        className="relative w-[80px] h-[100px] animate-gooseWalk"
+        className="relative w-[80px] h-[100px] animate-gooseWalk z-50"
         style={{ animationPlayState: !stopAnimation ? "running" : "paused" }}
       >
+        {showLightning && (
+          <div className="absolute w-[300px] h-[150px] bottom-0 z-45 animate-pulse translate-x-[-100px]">
+            <Lightning hue={220} xOffset={0} speed={1} intensity={1} size={1} />
+          </div>
+        )}
         <div
           className={`absolute bottom-6 z-10 ${
             bodyMotion ? "animate-bodyMotion" : ""
