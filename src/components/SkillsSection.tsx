@@ -7,8 +7,7 @@ import IconPostgresql from './svgs/IconPostgresql';
 import IconPrisma from './svgs/IconPrisma';
 import IconReact from './svgs/IconReact';
 import IconTailwind from './svgs/IconTailwind';
-import IconNestjs from './svgs/IconNestjs';
-// import IconCPP from './svgs/IconCPP';
+import IconPython from './svgs/IconPython';
 
 export default function SkillsSection() {
     return (
@@ -77,12 +76,12 @@ export default function SkillsSection() {
                     Tailwind
                 </span>
             </div>
-            <div className="relative flex flex-col items-center group hover:text-[#e02a55]">
+            <div className="relative flex flex-col items-center group">
                 <div className="flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-2">
-                    <IconNestjs />
+                    <IconPython />
                 </div>
                 <span className="absolute top-[calc(100%-4px)] text-sm text-gray-200 dark:text-gray-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    NestJs
+                    Python
                 </span>
             </div>
             <div className="relative flex flex-col items-center group hover:text-[#0a3c54]">

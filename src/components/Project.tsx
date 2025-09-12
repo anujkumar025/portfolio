@@ -21,7 +21,7 @@ export default function Project() {
           </div>
           <div className='grid grid-cols-2 gap-4'>
             <Card className='hover:scale-105 transition-transform duration-300 bg-[#FFFFFFCC]'>
-              <a href="https://www.restrogram.in" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.restrogram.in/ff/" target="_blank" rel="noopener noreferrer">
                 <CardHeader>
                   <CardTitle className="text-base sm:text-sm">RestroGram</CardTitle>
                   <CardDescription className="text-sm sm:text-xs">Serve Smarter, Grow Faster</CardDescription>

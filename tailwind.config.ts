@@ -10,6 +10,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			translate: {
+				'101': '101%'
+			},
 			transitionDuration: {
 				"cycle-slow": "120000ms",
 			},
@@ -29,8 +32,13 @@ export default {
 				gooseWalk: 'gooseWalk 15s linear infinite',
 				fadeIn: 'fadeIn 0.3s ease-out forwards',
 				fadeOut: 'fadeOut 0.3s ease-out forwards',
+				marquee: 'marquee 15s linear infinite',
 			},
 			keyframes: {
+				marquee: {
+					'from': { transform: 'translateX(0%)' },
+					'to': { transform: 'translateX(-50%)' },
+				},
 				gooseWalk: {
 					'0%': {
 						transform: 'translateX(0) scaleX(1)'

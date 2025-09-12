@@ -8,53 +8,54 @@ import Lightning from "./ui/lightning";
 
 const MESSAGE_MAP: Record<number, string[]> = {
   1: [
-    "Hi! I'm Honkus, your friendly goose 🪿",
-    "This place is neat—did you make it?",
+    "Hi! I'm Gus, your friendly goose.",
+    "Nice place! Did you make it?",
   ],
   3: [
-    "Oooh, was that a firecracker? That was *awesome!*",
-    "Shiny thing goes boom! I like you already.",
+    "Whoa! Was that a firecracker? Cool!",
+    "Boom! That was shiny! I like you already.",
   ],
   7: [
-    "So... you’re really into clicking, huh?",
-    "Okay okay, calm down, I still have ears.",
+    "Wow… you really like clicking, huh?",
+    "Okay okay, relax, I can still hear you.",
   ],
   11: [
-    "Hey, I’m trying to waddle here.",
-    "Clicks are fun, but moderation is a thing, y’know?",
+    "Hey, I’m trying to walk here.",
+    "Clicks are fun, but maybe slow down a bit?",
   ],
   15: [
-    "Okay listen—this isn't a game. Wait... is this a game?",
-    "I’m a goose, not a light show conductor.",
+    "Listen… this isn’t a game. Wait… is it a game?",
+    "I’m a goose, not a DJ for lights!",
   ],
   19: [
-    "Are you doing this *just* to mess with me?",
+    "Are you just clicking to annoy me?",
     "You know I can see you, right?",
   ],
   23: [
-    "You're making me question free will.",
-    "I don’t remember agreeing to this simulation.",
+    "You’re making me think about life now.",
+    "I don’t remember saying yes to this.",
   ],
-  27: [
-    "At this point I might just honk eternally into the void.",
-    "You're either very bored or very committed.",
+  26: [
+    "At this point, I might just honk forever.",
+    "You’re either really bored or really into this.",
   ],
   33: [
-    "You broke me. I'm broken. Goose.exe is not responding.",
+    "You broke me. I’m broken. Goose.exe stopped working.",
   ],
   41: [
-    "Still here? You win. I surrender. I’m just... goose dust now.",
+    "Still here? Okay, you win. I give up. I’m just… goose dust now.",
   ],
   100: [
-    "Clearly, You are a \"not very busy person\" type.",
+    "Wow, you must have a lot of free time.",
   ],
   120: [
-    "You know na, that I am counting how many times you clicked, and you just clicked for like 500 time.",
+    "You know I’m counting clicks, right? That’s like 500 now.",
   ],
   121: [
-    "You are not in Love with me, right?",
+    "You’re not in love with me, are you?",
   ],
 };
+
 
 function getRandomMessage(messages: string[]) {
   return messages[Math.floor(Math.random() * messages.length)];
