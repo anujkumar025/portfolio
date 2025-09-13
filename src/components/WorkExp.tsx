@@ -11,7 +11,7 @@ const Items = [
         "Built RESTful APIs with MVC architecture, lowering development bugs.",
         "Implemented JWT authentication and email services, improving onboarding speed by around 40%.",
         "Created the admin backend for managing businesses, ads, and admins.",
-        "Advised on hosting and infrastructure; hold 7% equity for technical contributions.",
+        "Advised on hosting and infrastructure.",
       ],
     }
   },
